@@ -15,7 +15,7 @@ body {
   padding: 10px; /*Space inside the title box*/
   text-transform: uppercase; /*All CAPS text*/
 }
-/*sets up container as flxbox*/
+/*sets up container as flexbox*/
 .product-container {
   display: flex;
   justify-content: center;
@@ -27,8 +27,9 @@ body {
 .product-card {
   background-color: #111; /* Card background */
   text-align: center; /* centers text inside*/
+  height: 250px;
   width: 250px; /*fixed card width*/
-  border-radius: 0px; /*rounded corners*/
+  border-radius: 8px; /*rounded corners*/
   overflow: hidden; /*Hides anything that sticks out*/
 }
 
@@ -41,21 +42,21 @@ body {
   text-transform: uppercase; /*All CAPS text*/
 }
 
-/*Imgae styling inside prodicts cards*/
+/*Image styling inside prodicts cards*/
 .product-card img {
-  display: block;
-  margin: 0 auto;
+  display: block; /*makes image its own line*/
+  margin: 0 auto; /*Centers image horizontally*/
   max-width: 100%; /* stops image from overflowing */
-  height: auto;    /* keeps correct proportions */
+  height: 75%;    /* keeps correct proportions */
 }
 
 
 .product-container {
   display: grid; /* 4 per row & turns container into CSS grid layout */
   grid-template-columns: repeat(4, 1fr); /* creates 4 equal columns */
-  gap: 20px; /* Add psace between both rows and columns in the grid */
+  gap: 20px; /* Add space between both rows and columns in the grid */
 }
-/* */
+/*light border*/
 .product-card {
   text-align: center; /* centers the title and image */
   border: 1px solid #ccc; /* gives a light gray border around each card*/

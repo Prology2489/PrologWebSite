@@ -1,0 +1,70 @@
+
+/* Page Background and Default font */
+body {
+  background-color: #1a1a1a; /* Dark background */
+  font-family: Arial, sans-serif; /* Sets default font*/
+  margin: 0; /*Removes browsers default margin*/
+  padding: 0;/* Removes broswers default padding*/
+}
+
+/*Styles the big heading at the top of my product section*/
+.product-main-title {
+  background-color: #0853f7; /* blue */
+  color: white; /*white tex*/
+  font-weight: bold; /*Bold text*/
+  padding: 10px; /*Space inside the title box*/
+  text-transform: uppercase; /*All CAPS text*/
+}
+/*sets up container as flxbox*/
+.product-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 40px;
+}
+
+/*styling dark theme*/
+.product-card {
+  background-color: #111; /* Card background */
+  text-align: center; /* centers text inside*/
+  width: 250px; /*fixed card width*/
+  border-radius: 0px; /*rounded corners*/
+  overflow: hidden; /*Hides anything that sticks out*/
+}
+
+/*styling for product text */
+.product-title {
+  background-color: #0853f7; /*Blue background */
+  color: white; /*white text*/
+  font-weight: bold; /*bold text*/
+  padding: 10px; /*space inside*/
+  text-transform: uppercase; /*All CAPS text*/
+}
+
+/*Imgae styling inside prodicts cards*/
+.product-card img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%; /* stops image from overflowing */
+  height: auto;    /* keeps correct proportions */
+}
+
+
+.product-container {
+  display: grid; /* 4 per row & turns container into CSS grid layout */
+  grid-template-columns: repeat(4, 1fr); /* creates 4 equal columns */
+  gap: 20px; /* Add psace between both rows and columns in the grid */
+}
+/* */
+.product-card {
+  text-align: center; /* centers the title and image */
+  border: 1px solid #ccc; /* gives a light gray border around each card*/
+  padding: 10px;
+}
+
+/* Product title text */
+.product-title {
+  font-weight: bold; /* Makes the product name stand out*/
+  margin-bottom: 8px; /* adds space between name and the image */
+}
+

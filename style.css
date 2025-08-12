@@ -5,11 +5,17 @@ body {
   font-family: Arial, sans-serif; /* Sets default font*/
   margin: 0; /*Removes browsers default margin*/
   padding: 0;/* Removes broswers default padding*/
+  
 }
 
 /*Styles the big heading at the top of my product section*/
 .product-main-title {
   background-color: #0853f7; /* blue */
+  margin: auto;
+  line-height: 3;
+  height: 75px;
+  width: 200px;
+  text-align: center;
   color: white; /*white tex*/
   font-weight: bold; /*Bold text*/
   padding: 10px; /*Space inside the title box*/
@@ -42,7 +48,7 @@ body {
   text-transform: uppercase; /*All CAPS text*/
 }
 
-/*Image styling inside prodicts cards*/
+/*Image styling inside products cards*/
 .product-card img {
   display: block; /*makes image its own line*/
   margin: 0 auto; /*Centers image horizontally*/

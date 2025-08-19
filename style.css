@@ -75,3 +75,14 @@ body {
   margin-bottom: 8px; /* adds space between name and the image */
 }
 
+.product-card img:hover {
+  animation: tilt 0.4s ease; /* runs the tilt animation - lasts for 0.4 secs*/
+}
+/* this defines the steps of the animation */
+@keyframes tilt {
+  0%   { transform: rotate(0deg) translateY(0); }   /* starting point */
+  50%  { transform: rotate(-2deg) translateY(-5px); } /* halfway through - rotated -2 degrees and moved up bu 5px */
+  100% { transform: rotate(0deg) translateY(0); } /* end point, back to normal state */
+}
+
+
